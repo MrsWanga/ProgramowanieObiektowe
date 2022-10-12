@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="Dodano walidację metody set">
-      <change afterPath="$PROJECT_DIR$/src/Diagram.puml" afterDir="false" />
+    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="Utworzono metodę main">
+      <change afterPath="$PROJECT_DIR$/src/Introducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Validator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Diagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Diagram.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +29,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FtGVnE2q5D2Ip6IZ5TeRs3eIPr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -95,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665306195411</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Utworzono metodę main">
+      <created>1665600408870</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665600408871</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,7 +125,8 @@
     <MESSAGE value="Utworzono klasę Category" />
     <MESSAGE value="Utworzono metody typu get i set" />
     <MESSAGE value="Dodano walidację metody set" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodano walidację metody set" />
+    <MESSAGE value="Utworzono metodę main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Utworzono metodę main" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
