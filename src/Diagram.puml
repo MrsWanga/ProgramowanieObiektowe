@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Category {
+String name
+getName()
+setName()
+toString()
+}
+
+
+@enduml
