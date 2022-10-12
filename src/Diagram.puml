@@ -12,9 +12,5 @@ class Validator {
 isNotBlankAndNull()
 }
 
-class Introducer {
-inputNameCategory()
-}
-
 
 @enduml

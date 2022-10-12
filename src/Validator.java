@@ -5,13 +5,11 @@ public class Validator {
             if (!name.isEmpty() && !name.isBlank()) {
                 isNameCorrect = true;
             } else {
-                System.out.println("Podano niepoprawna nazwe, sprobuj ponownie");
-                System.out.println(Introducer.inputNameCategory());
+                System.out.println("Podano niepoprawna nazwe");
                 System.exit(0);
             }
         }else {
-            System.out.println("Blad systemu, sprobuj ponownie");
-            System.out.println(Introducer.inputNameCategory());
+            System.out.println("Blad systemu");
             System.exit(0);
         }
         return isNameCorrect;
