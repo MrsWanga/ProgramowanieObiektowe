@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class Product {
     private String name = null;
     private Category category = null;
@@ -26,9 +28,11 @@ public class Product {
     }
 
     public void setPrice(float price) {
-        float roundPrice=Math.round(price * 100.0/100.0);
-        if(Validator.isPositiveFloat(roundPrice)){
-            this.price = roundPrice;
+        price = price*100;
+        price = Math.round(price);
+        price = price /100;
+        if(Validator.isPositiveFloat(price)){
+            this.price = price;
         }else {
             System.out.println("Podana cena musi być dodatnia");
         }
@@ -37,6 +41,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Produkt: " + name + category + "Cena: " + price;
+        return "Produkt: " + name + " " + category + " Cena: " + price;
     }
 }

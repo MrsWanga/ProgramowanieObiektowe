@@ -1,5 +1,8 @@
 @startuml
 'https://plantuml.com/class-diagram
+Validator --> Category
+Category --> Product
+Validator --> Product
 
 class Category {
 String name
@@ -7,9 +10,22 @@ getName()
 setName()
 toString()
 }
+class Product {
+String name
+Category category
+float price
+getName()
+setName()
+getCategory()
+setCategory()
+getPrice()
+setPrice()
+toString()
+}
 
 class Validator {
 isNotBlankAndNull()
+isPositive()
 }
 
 
