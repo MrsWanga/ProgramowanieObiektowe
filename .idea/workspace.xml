@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="Utworzono metode main 2">
-      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="Utworzono klase Product">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665610074950</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Utworzono klase Product">
+      <created>1665767838442</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665767838442</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +167,8 @@
     <MESSAGE value="Utworzono metodę main" />
     <MESSAGE value="Dodano klasy validator i introducer" />
     <MESSAGE value="Utworzono metode main 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Utworzono metode main 2" />
+    <MESSAGE value="Utworzono klase Product" />
+    <option name="LAST_COMMIT_MESSAGE" value="Utworzono klase Product" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

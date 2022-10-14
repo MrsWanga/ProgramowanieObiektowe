@@ -8,7 +8,9 @@ public class Product {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if(Validator.isNotBlankAndNull(name)){
+            this.name = name;
+        }
     }
 
     public Category getCategory() {
@@ -24,7 +26,13 @@ public class Product {
     }
 
     public void setPrice(float price) {
-        this.price = price;
+        float roundPrice=Math.round(price * 100.0/100.0);
+        if(Validator.isPositiveFloat(roundPrice)){
+            this.price = roundPrice;
+        }else {
+            System.out.println("Podana cena musi być dodatnia");
+        }
+
     }
 
     @Override

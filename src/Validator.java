@@ -15,4 +15,12 @@ public class Validator {
         return isNameCorrect;
     }
 
+    public static boolean isPositiveFloat(float value){
+        boolean isPositive = false;
+        if(value >= 0){
+            isPositive = true;
+        }
+        return isPositive;
+    }
+
 }
