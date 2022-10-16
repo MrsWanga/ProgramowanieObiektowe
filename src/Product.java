@@ -5,6 +5,17 @@ public class Product {
     private Category category = null;
     private float price = 0;
 
+    public Product(String name, float price) {
+        setName(name);
+        setPrice(price);
+    }
+
+    public Product(String name, float price, Category category){
+        setName(name);
+        setPrice(price);
+        setCategory(category);
+    }
+
     public String getName() {
         return name;
     }
@@ -12,6 +23,8 @@ public class Product {
     public void setName(String name) {
         if(Validator.isNotBlankAndNull(name)){
             this.name = name;
+        }else {
+            this.name = null;
         }
     }
 
@@ -34,7 +47,7 @@ public class Product {
         if(Validator.isPositiveFloat(price)){
             this.price = price;
         }else {
-            System.out.println("Podana cena musi być dodatnia");
+            this.price = 0;
         }
 
     }

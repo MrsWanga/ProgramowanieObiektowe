@@ -12,15 +12,23 @@ public class Main {
         System.out.println(sampleCategory);
 
         //test class Product
-        Product sampleProduct = new Product();
         System.out.print("Podaj nazwe produktu: ");
-        sampleProduct.setName(in.nextLine());
-        System.out.println(sampleProduct.getName());
-        sampleProduct.setCategory(sampleCategory);
-        System.out.println(sampleProduct.getCategory());
+        String inputNameProduct=in.nextLine();
         System.out.print("Podaj cene produktu: ");
-        sampleProduct.setPrice(in.nextFloat());
-        System.out.println(sampleProduct.getPrice());
-        System.out.println(sampleProduct);
+        float inputPriceProduct = in.nextFloat();
+        Product sampleProduct2Arg = new Product(inputNameProduct,inputPriceProduct);
+        Product sampleProduct3Arg = new Product(inputNameProduct,inputPriceProduct, sampleCategory);
+
+        System.out.println(sampleProduct2Arg.getName());
+        sampleProduct2Arg.setCategory(sampleCategory);
+        System.out.println(sampleProduct2Arg.getCategory());
+        System.out.println(sampleProduct2Arg.getPrice());
+        System.out.println(sampleProduct2Arg);
+
+        System.out.println(sampleProduct3Arg.getName());
+        sampleProduct3Arg.setCategory(sampleCategory);
+        System.out.println(sampleProduct3Arg.getCategory());
+        System.out.println(sampleProduct3Arg.getPrice());
+        System.out.println(sampleProduct3Arg);
     }
 }
