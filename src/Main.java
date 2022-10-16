@@ -5,9 +5,9 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         // test class Category
-        Category sampleCategory = new Category();
         System.out.print("Podaj nazwe kategorii: ");
-        sampleCategory.setName(in.nextLine());
+        String inputName=in.nextLine();
+        Category sampleCategory = new Category(inputName);
         System.out.println(sampleCategory.getName());
         System.out.println(sampleCategory);
 
