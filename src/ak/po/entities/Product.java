@@ -1,4 +1,6 @@
-import java.text.DecimalFormat;
+package ak.po.entities;
+
+import ak.po.Validator;
 
 public class Product {
     private String name = null;

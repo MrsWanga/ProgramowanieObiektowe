@@ -1,3 +1,7 @@
+package ak.po.entities;
+
+import ak.po.Validator;
+
 public class Category {
     private String name="";
 

@@ -1,17 +1,22 @@
+package ak.po;
+
+import ak.po.entities.Category;
+import ak.po.entities.Product;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        // test class Category
+        // test class ak.po.entities.Category
         System.out.print("Podaj nazwe kategorii: ");
         String inputName=in.nextLine();
         Category sampleCategory = new Category(inputName);
         System.out.println(sampleCategory.getName());
         System.out.println(sampleCategory);
 
-        //test class Product
+        //test class ak.po.entities.Product
         System.out.print("Podaj nazwe produktu: ");
         String inputNameProduct=in.nextLine();
         System.out.print("Podaj cene produktu: ");

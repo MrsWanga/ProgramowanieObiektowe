@@ -1,3 +1,5 @@
+package ak.po;
+
 public class Validator {
     public static boolean isNotBlankAndNull(String name){
         boolean isNameCorrect = false;
