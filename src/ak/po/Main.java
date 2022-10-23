@@ -12,7 +12,7 @@ public class Main {
         // test class ak.po.entities.Category
         System.out.print("Podaj nazwe kategorii: ");
         String inputName=in.nextLine();
-        Category sampleCategory = new Category(inputName);
+        Category sampleCategory = Category.from(inputName);
         System.out.println(sampleCategory.getName());
         System.out.println(sampleCategory);
 

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="Przeniesiono klasy Category i Product do pakietu ak.po.entities">
+    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="Dodano plik Diagram.png">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/entities/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ak/po/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ak/po/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ak/po/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ak/po/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/entities/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -6,6 +6,8 @@ public class Product {
     private String name = null;
     private Category category = null;
     private float price = 0;
+    private static final String VALIDATE_NULL_MESSEGE = "Argument nie może mieć wartości NULL";
+    private static final String VALIDATE_BLANK_MESSEGE = "Argument nie może być pusty";
 
     public Product(String name, float price) {
         setName(name);
@@ -22,11 +24,15 @@ public class Product {
         return name;
     }
 
-    public void setName(String name) {
-        if(Validator.isNotBlankAndNull(name)){
-            this.name = name;
-        }else {
-            this.name = null;
+    public void setName(String name){
+        if(Validator.isNotNull(name)) {
+            if(Validator.isNotBlank(name)){
+                this.name = name;
+            }else{
+                throw new IllegalArgumentException(VALIDATE_BLANK_MESSEGE);
+            }
+        }else{
+            throw new IllegalArgumentException(VALIDATE_NULL_MESSEGE);
         }
     }
 

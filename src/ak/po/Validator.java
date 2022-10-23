@@ -1,17 +1,22 @@
 package ak.po;
 
 public class Validator {
-    public static boolean isNotBlankAndNull(String name){
-        boolean isNameCorrect = false;
+    public static boolean isNotNull(String name){
+        boolean isNameCorrect =false;
         if(name != null) {
+            isNameCorrect=true;
+        }else{
+            throw new IllegalArgumentException("Argument nie może mieć wartości NULL");
+        }
+        return isNameCorrect;
+    }
+    public static boolean isNotBlank(String name){
+        boolean isNameCorrect = false;
+
             if (!name.isEmpty() && !name.isBlank()) {
                 isNameCorrect = true;
-            } else {
-                System.out.println("Podano niepoprawna nazwe");
             }
-        }else {
-            System.out.println("Blad systemu");
-        }
+
         return isNameCorrect;
     }
 
