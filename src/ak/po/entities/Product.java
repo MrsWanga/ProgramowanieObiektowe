@@ -1,5 +1,6 @@
 package ak.po.entities;
 
+import ak.po.Currency;
 import ak.po.Validator;
 
 public class Product {
@@ -8,16 +9,21 @@ public class Product {
     private float price = 0;
     private static final String VALIDATE_NULL_MESSEGE = "Argument nie może mieć wartości NULL";
     private static final String VALIDATE_BLANK_MESSEGE = "Argument nie może być pusty";
+    private Currency currency = Currency.PLN;
 
     public Product(String name, float price) {
-        setName(name);
-        setPrice(price);
+        this(name, null, price, Currency.PLN);
     }
 
-    public Product(String name, float price, Category category){
+    public Product(String name, Category category,  float price){
+        this(name, category, price, Currency.PLN);
+    }
+
+    public Product(String name, Category category, float price, Currency currency) {
         setName(name);
-        setPrice(price);
         setCategory(category);
+        setPrice(price);
+        setCurrency(currency);
     }
 
     public String getName() {
@@ -60,8 +66,16 @@ public class Product {
 
     }
 
+    public Currency getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(Currency currency) {
+        this.currency = currency;
+    }
+
     @Override
     public String toString() {
-        return "Produkt: " + name + " " + category + " Cena: " + price;
+        return "Produkt: " + name + " " + category + " Cena: " + price + " Waluta: " + currency;
     }
 }

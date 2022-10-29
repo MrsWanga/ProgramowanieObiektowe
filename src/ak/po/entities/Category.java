@@ -1,10 +1,10 @@
 package ak.po.entities;
 
+import ak.po.Currency;
 import ak.po.Validator;
 
 public class Category {
     private String name="";
-
     private static final String VALIDATE_NULL_MESSEGE = "Argument nie może mieć wartości NULL";
     private static final String VALIDATE_BLANK_MESSEGE = "Argument nie może być pusty";
 
@@ -31,8 +31,6 @@ public class Category {
            throw new IllegalArgumentException(VALIDATE_NULL_MESSEGE);
         }
     }
-
-
 
     public String toString() {
         return "Kategoria: "+getName();

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="Dodano plik Diagram.png">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="Dodano statyczna metode statyczna i wyjatki do klasy Category">
+      <change afterPath="$PROJECT_DIR$/src/ak/po/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ak/po/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ak/po/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/Validator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ak/po/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/entities/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ak/po/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/entities/Product.java" afterDir="false" />
     </list>
@@ -19,6 +20,7 @@
       <list>
         <option value="UML Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -190,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666123154278</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Dodano statyczna metode statyczna i wyjatki do klasy Category">
+      <created>1666515610857</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666515610857</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,7 +239,8 @@
     <MESSAGE value="Dodano konstruktor do klasy Category" />
     <MESSAGE value="Dodano konstruktory do klasy Product" />
     <MESSAGE value="Przeniesiono klasy Category i Product do pakietu ak.po.entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Przeniesiono klasy Category i Product do pakietu ak.po.entities" />
+    <MESSAGE value="Dodano statyczna metode statyczna i wyjatki do klasy Category" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodano statyczna metode statyczna i wyjatki do klasy Category" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
