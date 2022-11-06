@@ -23,12 +23,22 @@ public class Product {
 
 
         public Builder (String name) {
-        this.name=name;
+            this.name=name;
         }
 
         public Builder (Category category){
             this.category=category;
+            return this;
         }
+
+        public Builder (float price){
+            this.price=price;
+        }
+
+        public Builder (Currency currency) {
+            this.currency=currency;
+        }
+
     }
     public Product(String name, float price) {
         this(name, null, price, Currency.PLN);
