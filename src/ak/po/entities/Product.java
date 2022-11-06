@@ -11,6 +11,25 @@ public class Product {
     private static final String VALIDATE_BLANK_MESSEGE = "Argument nie może być pusty";
     private Currency currency = Currency.PLN;
 
+    private Product (Builder builder) {
+
+    }
+
+    public static class Builder {
+        private String name = null;
+        private Category category = null;
+        private float price = 0;
+        private Currency currency = Currency.PLN;
+
+
+        public Builder (String name) {
+        this.name=name;
+        }
+
+        public Builder (Category category){
+            this.category=category;
+        }
+    }
     public Product(String name, float price) {
         this(name, null, price, Currency.PLN);
     }
