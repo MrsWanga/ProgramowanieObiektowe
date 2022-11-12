@@ -4,15 +4,19 @@ import ak.po.Currency;
 import ak.po.Validator;
 
 public class Product {
-    private String name = null;
-    private Category category = null;
-    private float price = 0;
-    private static final String VALIDATE_NULL_MESSEGE = "Argument nie może mieć wartości NULL";
-    private static final String VALIDATE_BLANK_MESSEGE = "Argument nie może być pusty";
-    private Currency currency = Currency.PLN;
+    private final String name;
+    private final Category category;
+    private final float price;
+    private static final String VALIDATE_NULL_MESSAGE = "Argument nie może mieć wartości NULL";
+    private static final String VALIDATE_BLANK_MESSAGE = "Argument nie może być pusty";
+    private static final String VALIDATE_NEGATIVE_MESSAGE = "Argument nie może być pusty";
+    private final Currency currency;
 
     private Product (Builder builder) {
-
+        this.name = builder.name;
+        this.category = builder.category;
+        this.price = builder.price;
+        this.currency = builder.currency;
     }
 
     public static class Builder {
@@ -22,89 +26,68 @@ public class Product {
         private Currency currency = Currency.PLN;
 
 
-        public Builder (String name) {
-            this.name=name;
+        public Builder name (String name) {
+            if(Validator.isNotNull(name)) {
+                if(Validator.isNotBlank(name)){
+                    this.name = name;
+                }else{
+                    throw new IllegalArgumentException(VALIDATE_BLANK_MESSAGE);
+                }
+            }else{
+            throw new IllegalArgumentException(VALIDATE_NULL_MESSAGE);
+            }
+            return this;
         }
 
-        public Builder (Category category){
+        public Builder category (Category category){
             this.category=category;
             return this;
         }
 
-        public Builder (float price){
-            this.price=price;
+        public Builder price (float price){
+            price = price*100;
+            price = Math.round(price);
+            price = price /100;
+            if(Validator.isPositiveFloat(price)){
+                this.price = price;
+            }else {
+                throw new IllegalArgumentException(VALIDATE_NEGATIVE_MESSAGE);
+            }
+            return this;
         }
 
-        public Builder (Currency currency) {
+        public Builder currency (Currency currency) {
             this.currency=currency;
+            return this;
         }
 
+        public Product build (){
+            return new Product(this);
+        }
     }
-    public Product(String name, float price) {
-        this(name, null, price, Currency.PLN);
-    }
-
-    public Product(String name, Category category,  float price){
-        this(name, category, price, Currency.PLN);
-    }
-
-    public Product(String name, Category category, float price, Currency currency) {
-        setName(name);
-        setCategory(category);
-        setPrice(price);
-        setCurrency(currency);
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name){
-        if(Validator.isNotNull(name)) {
-            if(Validator.isNotBlank(name)){
-                this.name = name;
-            }else{
-                throw new IllegalArgumentException(VALIDATE_BLANK_MESSEGE);
-            }
-        }else{
-            throw new IllegalArgumentException(VALIDATE_NULL_MESSEGE);
-        }
     }
 
     public Category getCategory() {
         return category;
     }
 
-    public void setCategory(Category category) {
-        this.category = category;
-    }
-
     public float getPrice() {
         return price;
-    }
-
-    public void setPrice(float price) {
-        price = price*100;
-        price = Math.round(price);
-        price = price /100;
-        if(Validator.isPositiveFloat(price)){
-            this.price = price;
-        }else {
-            this.price = 0;
-        }
-
     }
 
     public Currency getCurrency() {
         return currency;
     }
 
-    public void setCurrency(Currency currency) {
-        this.currency = currency;
-    }
-
     @Override
     public String toString() {
-        return "Produkt: " + name + " " + category + " Cena: " + price + " Waluta: " + currency;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Produkt: ").append(name)
+                .append(" Kategoria: ").append(category)
+                .append(" Cena: ").append(price)
+                .append(" Waluta: ").append(currency);
+        return sb.toString();
     }
 }

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="Stworzono typ wyliczeniowy Currency oraz konstruktor czteroargumentowy w klasie Product.">
+    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ak/po/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ak/po/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/Validator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ak/po/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/entities/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -194,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666515610857</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix1">
+      <created>1667727139136</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667727139136</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,7 +245,8 @@
     <MESSAGE value="Dodano konstruktory do klasy Product" />
     <MESSAGE value="Przeniesiono klasy Category i Product do pakietu ak.po.entities" />
     <MESSAGE value="Dodano statyczna metode statyczna i wyjatki do klasy Category" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodano statyczna metode statyczna i wyjatki do klasy Category" />
+    <MESSAGE value="fix1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

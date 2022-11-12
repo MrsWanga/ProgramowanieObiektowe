@@ -1,6 +1,12 @@
 package ak.po;
 
 public class Validator {
+    private static final Validator INSTANCE =new Validator();
+
+    public static Validator getInstance(){
+        return INSTANCE;
+    }
+
     public static boolean isNotNull(String name){
         boolean isNameCorrect =false;
         if(name != null) {
