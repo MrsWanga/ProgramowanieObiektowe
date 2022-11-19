@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="Dodano statyczna metode statyczna i wyjatki do klasy Category">
-      <change afterPath="$PROJECT_DIR$/src/ak/po/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+    <list default="true" id="b7910e1d-e736-47fc-85f5-37d89dd0dd9f" name="Changes" comment="Tworzenie instancji klasy Product za pomocą wzorca budowniczego">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ak/po/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ak/po/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/entities/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ak/po/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ak/po/entities/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,14 +15,13 @@
       <list>
         <option value="UML Class" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Laboratorium2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,6 +67,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -157,49 +152,7 @@
       <option name="project" value="LOCAL" />
       <updated>1665770491732</updated>
     </task>
-    <task id="LOCAL-00011" summary="Testowanie metod klasy Product">
-      <created>1665772958753</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1665772958753</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Testowanie metod klasy Product">
-      <created>1665909251686</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1665909251686</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Dodano konstruktor do klasy Category">
-      <created>1665910078257</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1665910078257</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Dodano konstruktory do klasy Product">
-      <created>1665911081649</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1665911081649</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Przeniesiono klasy Category i Product do pakietu ak.po.entities">
-      <created>1666123154278</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1666123154278</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Dodano statyczna metode statyczna i wyjatki do klasy Category">
-      <created>1666515610857</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1666515610857</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,19 +160,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="Laboratorium2" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -235,12 +176,7 @@
     <MESSAGE value="Utworzono metode main 2" />
     <MESSAGE value="Utworzono klase Product" />
     <MESSAGE value="Dodano walidacje skladnikow klasy" />
-    <MESSAGE value="Testowanie metod klasy Product" />
-    <MESSAGE value="Dodano konstruktor do klasy Category" />
-    <MESSAGE value="Dodano konstruktory do klasy Product" />
-    <MESSAGE value="Przeniesiono klasy Category i Product do pakietu ak.po.entities" />
-    <MESSAGE value="Dodano statyczna metode statyczna i wyjatki do klasy Category" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodano statyczna metode statyczna i wyjatki do klasy Category" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodano walidacje skladnikow klasy" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
